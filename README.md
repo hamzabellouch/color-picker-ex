@@ -7,34 +7,6 @@ A modern, precision-engineered eyedropper browser extension inspired by **Micros
 
 Compatible with all major modern browsers: **Google Chrome, Brave, Microsoft Edge, Opera, Vivaldi (Chromium-based)** and **Mozilla Firefox**.
 
-</p>
-<h3 align="center">Version 1.0.0</h3>
-<p align="center">
-</p>
-
-> Changes — October 25, 2026
-
-- Initial project release and core architecture setup for Color Picker, a precision-engineered eyedropper extension inspired by **Microsoft PowerToys Color Picker**
-- Sub-pixel precision color sampling capturing active tab viewports via `chrome.tabs.captureVisibleTab` and scaling page coordinates against `window.devicePixelRatio` for exact native-resolution pixel extraction (`getImageData`)
-- Real-time floating cursor badge tracking pointer coordinates with dynamic color swatch preview, instant HEX readout, and intelligent viewport boundary collision detection
-- Draggable color inspection card modal freezing the sampled pixel upon click, relocatable across the screen via title bar mouse dragging, and dismissible with `Esc` or close button
-- Comprehensive mathematical color conversion engine supporting 15 distinct formats (`HEX`, `RGB`, `HSL`, `HSV`, `CMYK`, `HSB`, `HSI`, `HWB`, `NCol`, `CIELAB`, `CIEXYZ`, `VEC4`, `Decimal`, `HEX Int`, and `HEX with #`)
-- Instant one-click clipboard copying for all 15 color representations with responsive checkmark visual feedback badges and native Clipboard API integration
-- Interactive 6-tier vertical monochrome palette generator calculating dynamic tints and shades from pure white highlights down to deep dark undertones with instant one-click swatch adoption
-- Persistent recent color history row tracking sampled swatches across browsing sessions via `chrome.storage.local`, complete with smooth active blue selection ring indicators
-- In-card Color Formats Settings manager (`⚙️`) enabling dynamic toggling, custom reordering, and template-based user format creation (e.g., `rgba({r}, {g}, {b}, 1.0)`)
-- Zero-leakage UI architecture encapsulated entirely inside an open Shadow DOM root (`attachShadow({ mode: 'open' })`), guaranteeing complete style isolation from host webpage CSS and DOM collisions
-- Global keyboard shortcut workflows: `Alt + Shift + C` (configurable) for instant eyedropper activation, `Esc` or right-click to safely cancel picking, and `Esc` to dismiss the modal card
-- Intelligent page safety verification detecting restricted browser URLs (`chrome://`, `edge://`, DevTools, Web Store) with visual badge alert warnings (`ERR`) and automated fallback script injection
-- 100% local client-side execution running strictly in browser memory with zero network tracking, analytics, remote telemetry, or external server communication
-- Dedicated standalone build packages and tailored Manifest V3 configurations for Chromium-based browsers (`chromium/`) and Mozilla Firefox (`firefox/` with Gecko ID `color-picker@tkno`)
-
-> Build Status
-
-```bash
-BUILD SUCCESSFUL
-```
-
 
 
 ### <a name="Features"></a> ⭐ Features
