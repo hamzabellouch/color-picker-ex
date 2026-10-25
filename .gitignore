@@ -1,0 +1,20 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary and build artifacts
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.log

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Picker Extension Test Page</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --accent: #58a6ff;
+    }
+    body {
+      margin: 0;
+      padding: 40px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    h1 {
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    p {
+      color: #8b949e;
+      margin-bottom: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .swatch {
+      height: 90px;
+      border-radius: 8px;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+    }
+    .label {
+      font-weight: 600;
+      font-size: 14px;
+      color: #ffffff;
+    }
+    .gradient-strip {
+      height: 70px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      background: linear-gradient(90deg, #ff416c, #8a2387, #e94057, #f27121, #00c6ff, #0072ff, #00f2fe, #4facfe);
+    }
+    .instructions {
+      background: #1f242c;
+      border-left: 4px solid #58a6ff;
+      padding: 16px 20px;
+      border-radius: 6px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+    .instructions code {
+      background: #2d333b;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #58a6ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎨 Color Picker Test Page</h1>
+  <p>Use this page to test the Chromium Color Picker extension.</p>
+
+  <div class="instructions">
+    <strong>How to test:</strong>
+    <ol style="margin-top: 8px; padding-left: 20px;">
+      <li>Click the <strong>Color Picker</strong> extension icon in your Chrome toolbar, or press <code>Alt+Shift+C</code>.</li>
+      <li>Move your cursor over any color box or gradient below. Notice the floating badge with the color swatch and live HEX code.</li>
+      <li>Left-click to pick the color. The Color Picker card appears!</li>
+      <li>Click any format's copy icon to copy to clipboard.</li>
+      <li>Click the ⚙️ settings button to toggle formats (HEX, RGB, HSL, HSV, CMYK, HSB).</li>
+    </ol>
+  </div>
+
+  <h2>Continuous Spectrum</h2>
+  <div class="gradient-strip"></div>
+
+  <h2>Sample Color Swatches</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="swatch" style="background-color: #0d1117;"></div>
+      <div class="label">GitHub Dark (#0d1117)</div>
+    </div>
+    <div class="card">
+      <div class="swatch" style="background-color: #ffe4b5;"></div>
+      <div class="label">Moccasin (#ffe4b5)</div>
+    </div>
+    <div class="card">
+      <div class="swatch" style="background-color: #ff3366;"></div>
+      <div class="label">Crimson Red (#ff3366)</div>
+    </div>
+    <div class="card">
+      <div class="swatch" style="background-color: #00d2ff;"></div>
+      <div class="label">Cyan (#00d2ff)</div>
+    </div>
+    <div class="card">
+      <div class="swatch" style="background-color: #2ea44f;"></div>
+      <div class="label">Emerald Green (#2ea44f)</div>
+    </div>
+    <div class="card">
+      <div class="swatch" style="background-color: #e3b341;"></div>
+      <div class="label">Golden Yellow (#e3b341)</div>
+    </div>
+    <div class="card">
+      <div class="swatch" style="background-color: #8957e5;"></div>
+      <div class="label">Purple (#8957e5)</div>
+    </div>
+    <div class="card">
+      <div class="swatch" style="background-color: #ffffff;"></div>
+      <div class="label" style="color: #ffffff;">Pure White (#ffffff)</div>
+    </div>
+  </div>
+
+</body>
+</html>
