@@ -2,6 +2,9 @@
 
 A modern, precision-engineered eyedropper browser extension inspired by **Microsoft PowerToys Color Picker**. Seamlessly inspect, sample, and convert any pixel color on any webpage—featuring a live cursor badge, an interactive vertical shades bar, 15 comprehensive color formats, draggable card interface, and an isolated Shadow DOM architecture.
 
+<img width="2752" height="1536" alt="color-picker" src="https://github.com/user-attachments/assets/d16addfd-d4ab-4cf7-811e-2a7b421887f2" />
+
+
 Compatible with all major modern browsers: **Google Chrome, Brave, Microsoft Edge, Opera, Vivaldi (Chromium-based)** and **Mozilla Firefox**.
 
 
